@@ -1,0 +1,19 @@
+# Core (laptop + rolf)
+datasets>=2.18
+huggingface_hub>=0.23
+pandas>=2.0
+openpyxl>=3.1            # read VLMEvalKit .xlsx predictions
+pillow>=10.0
+matplotlib>=3.7
+numpy>=1.24
+
+# Judge / API-VLM providers (set the matching *_API_KEY)
+anthropic>=0.40
+openai>=1.30
+
+# GPU inference (rolf). Torch pinned via conda/CUDA on rolf; VLMEvalKit brings
+# transformers/accelerate. Listed here for a laptop `pip` sanity install too.
+transformers>=4.45
+accelerate>=0.34
+# vlmeval                # installed separately in bootstrap_rolf.sh (heavy)
+# sentence-transformers  # optional: semantic label matching (--embeddings)

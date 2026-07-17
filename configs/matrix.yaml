@@ -1,0 +1,28 @@
+# FailureModeBench evaluation matrix (paper §3.3).
+# Consumed as documentation + by run_rolf.sh env knobs. Keys match the
+# registries in failuremodebench/config.py.
+
+run: main
+
+models:                       # models under test
+  - qwen2vl_7b                # Qwen2-VL-7B-Instruct
+  - internvl25_8b             # InternVL2.5-8B
+  - llava16_7b                # LLaVA-1.6-7B (vicuna)
+  # - internvl25_4b           # add for the 4B/8B size-variant ablation
+  # - llava16_13b             # add for the 7B/13B size-variant ablation
+  # - claude_opus             # closed API VLM (needs ANTHROPIC_API_KEY)
+
+datasets:                     # all 16; comment out to subset
+  recognition: [imagenet, imagenet_v2, imagenet_a, imagenet_r,
+                imagenet_sketch, dtd, food101, resisc45]
+  vqa: [mathverse, mathvista, seed, mme, realworldqa, capture, crpe, ai2d]
+
+judge:
+  provider: anthropic
+  model: claude-opus-4-8
+  n_per_family: 200           # errors annotated per task family
+  attach_images: true
+
+prompting:
+  recognition: zero_shot      # zero_shot | 2shot (2-shot: extend recognition.py)
+  resolution_filter: 1000     # drop images with any side > this (paper §3.1)

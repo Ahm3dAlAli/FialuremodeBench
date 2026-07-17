@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+results/
+predictions/
+run_rolf.log
+*.egg-info/
+.ipynb_checkpoints/
+# keep generated labelsets tracked (small, reproducible):
+!failuremodebench/labelsets/*.json
