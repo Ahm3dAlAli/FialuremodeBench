@@ -56,10 +56,73 @@ class VLMEvalKitBackend(VLMBackend):
                 return str(self.model.generate(msg)).strip()
 
 
+class CLIPBackend(VLMBackend):
+    """open_clip zero-shot classifier -- the contrastive contrast to generative
+    VLMs. Not a generator: it scores an image against the dataset's label set and
+    returns the argmax label, so it structurally cannot emit an out-of-set
+    super-category (no F7). Exposes set_labels()/classify() for the CLIP runner.
+    """
+    def __init__(self, spec_str: str, fallbacks=None, device: Optional[str] = None):
+        import open_clip
+        import torch
+        self.torch = torch
+        self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+        specs = [spec_str] + list(fallbacks or [])
+        last = None
+        self.model = None
+        for s in specs:
+            arch, pretrained = s.split(":", 1)
+            try:
+                self.model, _, self.preprocess = open_clip.create_model_and_transforms(
+                    arch, pretrained=pretrained)
+                self.tokenizer = open_clip.get_tokenizer(arch)
+                self.spec_used = s
+                break
+            except Exception as e:  # arch/pretrained tag not in this open_clip build
+                last = e
+        if self.model is None:
+            raise RuntimeError(f"open_clip could not load any of {specs}: {last}")
+        self.model = self.model.to(self.device).eval()
+        self.labels = None
+        self.text_features = None
+
+    def set_labels(self, labels, templates=("a photo of a {}.", "a photo of the {}.")):
+        """Precompute (once per dataset) the mean-ensembled text embedding per label."""
+        import torch
+        self.labels = list(labels)
+        embs = []
+        with torch.no_grad():
+            for lab in self.labels:
+                toks = self.tokenizer([t.format(lab) for t in templates]).to(self.device)
+                tf = self.model.encode_text(toks)
+                tf = tf / tf.norm(dim=-1, keepdim=True)
+                e = tf.mean(0)
+                embs.append(e / e.norm())
+            self.text_features = torch.stack(embs)
+
+    def classify(self, image):
+        """Return (pred_label, cosine_score) for the best-matching label."""
+        import torch
+        with torch.no_grad():
+            img = self.preprocess(image.convert("RGB")).unsqueeze(0).to(self.device)
+            f = self.model.encode_image(img)
+            f = f / f.norm(dim=-1, keepdim=True)
+            sims = (f @ self.text_features.T).squeeze(0)
+            idx = int(sims.argmax())
+            return self.labels[idx], float(sims[idx])
+
+    def generate(self, image, prompt: str) -> str:  # not used; keeps the interface
+        lab, _ = self.classify(image)
+        return lab
+
+
 def build_backend(model_key: str, prefer_api: bool = False,
                   api_provider="anthropic") -> tuple[VLMBackend, ModelSpec]:
     """Construct the right backend for a model key from the MODELS registry."""
     spec = MODELS[model_key]
     if spec.family == "api" or prefer_api:
         return ApiVLMBackend(api_provider), spec
+    if spec.family == "clip":
+        from .config import CLIP_FALLBACKS
+        return CLIPBackend(spec.hf_id, CLIP_FALLBACKS.get(model_key)), spec
     return VLMEvalKitBackend(spec.vlmevalkit_name, spec.load_4bit), spec

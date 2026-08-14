@@ -77,7 +77,10 @@ class OpenAIProvider(Provider):
         key = os.environ.get("OPENAI_API_KEY")
         if not key:
             raise RuntimeError("OPENAI_API_KEY is not set.")
-        self.client = OpenAI(api_key=key)
+        # OPENAI_BASE_URL lets this target OpenAI-compatible gateways (OpenRouter,
+        # vLLM, ...). e.g. https://openrouter.ai/api/v1 with an OpenRouter key.
+        base = os.environ.get("OPENAI_BASE_URL")
+        self.client = OpenAI(api_key=key, base_url=base) if base else OpenAI(api_key=key)
         self.model = model
 
     def complete(self, system, user, image=None, max_tokens=1024, temperature=0.0):
@@ -91,6 +94,43 @@ class OpenAIProvider(Provider):
             messages=[{"role": "system", "content": system},
                       {"role": "user", "content": parts}])
         return resp.choices[0].message.content or ""
+
+
+class LocalVLMProvider(Provider):
+    """Open-weight VLM judge, run locally via VLMEvalKit (no API key).
+
+    Reuses the same VLMEvalKit model zoo as the models-under-test, so the judge
+    runs entirely on rolf's GPUs. Default is Qwen2.5-VL-7B — strong and distinct
+    from the tested Qwen2-VL-7B, avoiding the judge/test self-preference confound.
+    """
+    name = "local"
+
+    def __init__(self, model: str = "Qwen2.5-VL-7B-Instruct"):
+        from .backends import VLMEvalKitBackend
+        self.backend = VLMEvalKitBackend(model)
+        self.model = model
+
+    def complete(self, system, user, image=None, max_tokens=1024, temperature=0.0):
+        prompt = f"{system}\n\n{user}" if system else user
+        # VLMEvalKit models take (image, prompt); text-only if no image.
+        return self.backend.generate(image, prompt)
+
+
+class LocalLLMEndpointProvider(OpenAIProvider):
+    """Open-weight LLM served behind an OpenAI-compatible endpoint (vLLM/Ollama).
+
+    Point OPENAI_BASE_URL at the server (e.g. http://localhost:8000/v1) and set
+    the model name. Lets you judge with any served open model, image-capable or
+    not. OPENAI_API_KEY can be any placeholder for local servers.
+    """
+    name = "local_endpoint"
+
+    def __init__(self, model="Qwen2.5-VL-7B-Instruct"):
+        from openai import OpenAI
+        base = os.environ.get("OPENAI_BASE_URL", "http://localhost:8000/v1")
+        key = os.environ.get("OPENAI_API_KEY", "EMPTY")
+        self.client = OpenAI(api_key=key, base_url=base)
+        self.model = model
 
 
 class EchoProvider(Provider):
@@ -110,6 +150,10 @@ def get_provider(name: str = "anthropic", model: Optional[str] = None) -> Provid
         return AnthropicProvider(model or "claude-opus-4-8")
     if name == "openai":
         return OpenAIProvider(model or "gpt-4o")
+    if name in ("local", "vlm", "local_vlm"):
+        return LocalVLMProvider(model or "Qwen2.5-VL-7B-Instruct")
+    if name == "local_endpoint":
+        return LocalLLMEndpointProvider(model or "Qwen2.5-VL-7B-Instruct")
     if name == "echo":
         return EchoProvider()
     raise ValueError(f"unknown provider {name!r}")

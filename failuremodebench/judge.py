@@ -119,8 +119,11 @@ def judge_errors(sampled: list[dict], provider, out_path: str,
             verdict = None
             for attempt in range(max_retries):
                 try:
+                    # Reasoning judges (e.g. deepseek-*) spend tokens on a hidden
+                    # reasoning pass before emitting content; too small a budget
+                    # truncates before any JSON and yields NA. 2048 leaves room.
                     reply = provider.complete(sys, usr, image=image,
-                                              max_tokens=512, temperature=0.0)
+                                              max_tokens=2048, temperature=0.0)
                     verdict = _parse_verdict(reply)
                     if verdict:
                         break

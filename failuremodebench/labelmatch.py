@@ -58,6 +58,11 @@ class LabelMatcher:
         if not a:
             return None, "empty"
 
+        # 0. exact match (highest precision): normalised answer == a label
+        for i, nl in enumerate(self.norm_labels):
+            if nl and a == nl:
+                return i, "exact"
+
         # 1. label substring of answer (prefer the longest label that fits)
         hits = [(i, nl) for i, nl in enumerate(self.norm_labels)
                 if nl and re.search(rf"\b{re.escape(nl)}\b", a)]

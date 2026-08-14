@@ -8,3 +8,8 @@ run_rolf.log
 .ipynb_checkpoints/
 # keep generated labelsets tracked (small, reproducible):
 !failuremodebench/labelsets/*.json
+.claude/
+results/**/images/
+results/*/images/
+results/*/predictions/images/
+docs/FailureModeBench_annotation_study.html
