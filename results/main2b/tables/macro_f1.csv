@@ -1,0 +1,4 @@
+model,dataset,macro_f1
+qwen2vl_2b,dtd,0.1249
+qwen2vl_2b,food101,0.0911
+qwen2vl_2b,resisc45,0.5528

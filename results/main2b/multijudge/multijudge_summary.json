@@ -1,0 +1,57 @@
+{
+  "n_common_errors": 175,
+  "judges": [
+    "gpt-4o-mini",
+    "qwen-2.5-72b",
+    "llama-3.3-70b"
+  ],
+  "pairwise_agreement": {
+    "gpt-4o-mini vs qwen-2.5-72b": {
+      "raw_agreement": 0.629,
+      "cohen_kappa": 0.464
+    },
+    "gpt-4o-mini vs llama-3.3-70b": {
+      "raw_agreement": 0.589,
+      "cohen_kappa": 0.423
+    },
+    "qwen-2.5-72b vs llama-3.3-70b": {
+      "raw_agreement": 0.669,
+      "cohen_kappa": 0.513
+    }
+  },
+  "per_judge_distribution": {
+    "gpt-4o-mini": {
+      "F1": 23,
+      "F6": 14,
+      "F7": 96,
+      "F3": 32,
+      "F4": 6,
+      "F2": 3,
+      "F8": 1
+    },
+    "qwen-2.5-72b": {
+      "F1": 10,
+      "F6": 58,
+      "F7": 86,
+      "F4": 20,
+      "F8": 1
+    },
+    "llama-3.3-70b": {
+      "F2": 13,
+      "F1": 20,
+      "F6": 41,
+      "F7": 79,
+      "F4": 21,
+      "F8": 1
+    }
+  },
+  "ensemble_distribution": {
+    "F1": 19,
+    "F6": 34,
+    "F7": 89,
+    "F3": 22,
+    "F4": 9,
+    "F2": 1,
+    "F8": 1
+  }
+}

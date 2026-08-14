@@ -1,0 +1,11 @@
+model,dataset,n,correct,accuracy
+qwen2vl_7b,dtd,1000,139,0.139
+qwen2vl_7b,food101,1000,477,0.477
+qwen2vl_7b,imagenet,1000,252,0.252
+qwen2vl_7b,imagenet_a,1000,181,0.181
+qwen2vl_7b,imagenet_r,1000,358,0.358
+qwen2vl_7b,imagenet_sketch,1000,380,0.38
+qwen2vl_7b,imagenet_v2,1000,388,0.388
+qwen2vl_7b,mme,2374,2088,0.8795
+qwen2vl_7b,resisc45,1000,507,0.507
+qwen2vl_7b,seed,14232,10826,0.7607

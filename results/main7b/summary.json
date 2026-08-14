@@ -1,0 +1,86 @@
+{
+  "models": 1,
+  "confusion_files": [
+    "/Users/ahmeda./Desktop/FialuremodeBench /results/main7b/tables/confusion/qwen2vl_7b__dtd.csv",
+    "/Users/ahmeda./Desktop/FialuremodeBench /results/main7b/tables/confusion/qwen2vl_7b__food101.csv",
+    "/Users/ahmeda./Desktop/FialuremodeBench /results/main7b/tables/confusion/qwen2vl_7b__resisc45.csv"
+  ],
+  "dominant_by_family": {
+    "Generic": [
+      "F7",
+      85.0
+    ],
+    "Robustness": [
+      "F7",
+      80.9
+    ],
+    "Fine-grained": [
+      "F7",
+      85.4
+    ],
+    "Satellite": [
+      "F7",
+      90.5
+    ],
+    "General": [
+      "F6",
+      60.0
+    ]
+  },
+  "count_mismatches": [
+    [
+      "imagenet",
+      1000,
+      49032
+    ],
+    [
+      "imagenet_v2",
+      1000,
+      9772
+    ],
+    [
+      "imagenet_a",
+      1000,
+      7467
+    ],
+    [
+      "imagenet_r",
+      1000,
+      28506
+    ],
+    [
+      "imagenet_sketch",
+      1000,
+      35350
+    ],
+    [
+      "dtd",
+      1000,
+      5640
+    ],
+    [
+      "food101",
+      1000,
+      25250
+    ],
+    [
+      "resisc45",
+      1000,
+      4500
+    ],
+    [
+      "seed",
+      14232,
+      3881
+    ],
+    [
+      "mme",
+      2374,
+      1576
+    ]
+  ],
+  "figures": [
+    "/Users/ahmeda./Desktop/FialuremodeBench /results/main7b/figures/failure_by_family.png",
+    "/Users/ahmeda./Desktop/FialuremodeBench /results/main7b/figures/accuracy_heatmap.png"
+  ]
+}

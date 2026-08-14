@@ -1,0 +1,173 @@
+{
+  "n_common_errors": 500,
+  "judges": [
+    "deepseek/deepseek-v4-flash",
+    "openai/gpt-4o",
+    "openai/gpt-4o-mini",
+    "meta-llama/llama-3.3-70b-instruct",
+    "mistralai/mistral-large",
+    "deepseek/deepseek-chat",
+    "microsoft/phi-4"
+  ],
+  "pairwise_agreement": {
+    "deepseek/deepseek-v4-flash vs openai/gpt-4o": {
+      "raw_agreement": 0.728,
+      "cohen_kappa": 0.597
+    },
+    "deepseek/deepseek-v4-flash vs openai/gpt-4o-mini": {
+      "raw_agreement": 0.538,
+      "cohen_kappa": 0.387
+    },
+    "deepseek/deepseek-v4-flash vs meta-llama/llama-3.3-70b-instruct": {
+      "raw_agreement": 0.658,
+      "cohen_kappa": 0.531
+    },
+    "deepseek/deepseek-v4-flash vs mistralai/mistral-large": {
+      "raw_agreement": 0.692,
+      "cohen_kappa": 0.561
+    },
+    "deepseek/deepseek-v4-flash vs deepseek/deepseek-chat": {
+      "raw_agreement": 0.672,
+      "cohen_kappa": 0.545
+    },
+    "deepseek/deepseek-v4-flash vs microsoft/phi-4": {
+      "raw_agreement": 0.594,
+      "cohen_kappa": 0.446
+    },
+    "openai/gpt-4o vs openai/gpt-4o-mini": {
+      "raw_agreement": 0.598,
+      "cohen_kappa": 0.443
+    },
+    "openai/gpt-4o vs meta-llama/llama-3.3-70b-instruct": {
+      "raw_agreement": 0.66,
+      "cohen_kappa": 0.53
+    },
+    "openai/gpt-4o vs mistralai/mistral-large": {
+      "raw_agreement": 0.762,
+      "cohen_kappa": 0.653
+    },
+    "openai/gpt-4o vs deepseek/deepseek-chat": {
+      "raw_agreement": 0.72,
+      "cohen_kappa": 0.605
+    },
+    "openai/gpt-4o vs microsoft/phi-4": {
+      "raw_agreement": 0.692,
+      "cohen_kappa": 0.569
+    },
+    "openai/gpt-4o-mini vs meta-llama/llama-3.3-70b-instruct": {
+      "raw_agreement": 0.61,
+      "cohen_kappa": 0.481
+    },
+    "openai/gpt-4o-mini vs mistralai/mistral-large": {
+      "raw_agreement": 0.648,
+      "cohen_kappa": 0.512
+    },
+    "openai/gpt-4o-mini vs deepseek/deepseek-chat": {
+      "raw_agreement": 0.63,
+      "cohen_kappa": 0.498
+    },
+    "openai/gpt-4o-mini vs microsoft/phi-4": {
+      "raw_agreement": 0.678,
+      "cohen_kappa": 0.55
+    },
+    "meta-llama/llama-3.3-70b-instruct vs mistralai/mistral-large": {
+      "raw_agreement": 0.738,
+      "cohen_kappa": 0.639
+    },
+    "meta-llama/llama-3.3-70b-instruct vs deepseek/deepseek-chat": {
+      "raw_agreement": 0.824,
+      "cohen_kappa": 0.76
+    },
+    "meta-llama/llama-3.3-70b-instruct vs microsoft/phi-4": {
+      "raw_agreement": 0.704,
+      "cohen_kappa": 0.594
+    },
+    "mistralai/mistral-large vs deepseek/deepseek-chat": {
+      "raw_agreement": 0.764,
+      "cohen_kappa": 0.671
+    },
+    "mistralai/mistral-large vs microsoft/phi-4": {
+      "raw_agreement": 0.676,
+      "cohen_kappa": 0.547
+    },
+    "deepseek/deepseek-chat vs microsoft/phi-4": {
+      "raw_agreement": 0.718,
+      "cohen_kappa": 0.61
+    }
+  },
+  "per_judge_distribution": {
+    "deepseek/deepseek-v4-flash": {
+      "F4": 41,
+      "F1": 51,
+      "F2": 6,
+      "F6": 188,
+      "NA": 3,
+      "F7": 199,
+      "F3": 9,
+      "F8": 2,
+      "F5": 1
+    },
+    "openai/gpt-4o": {
+      "F4": 21,
+      "F3": 38,
+      "F7": 227,
+      "F6": 178,
+      "F1": 29,
+      "F8": 7
+    },
+    "openai/gpt-4o-mini": {
+      "F4": 21,
+      "F1": 61,
+      "F3": 119,
+      "F7": 244,
+      "F2": 10,
+      "F6": 42,
+      "F8": 3
+    },
+    "meta-llama/llama-3.3-70b-instruct": {
+      "F4": 87,
+      "F1": 81,
+      "F7": 206,
+      "F2": 17,
+      "F6": 100,
+      "F3": 6,
+      "F8": 3
+    },
+    "mistralai/mistral-large": {
+      "F4": 39,
+      "F1": 69,
+      "F3": 34,
+      "F7": 226,
+      "F6": 129,
+      "F5": 2,
+      "F8": 1
+    },
+    "deepseek/deepseek-chat": {
+      "F4": 91,
+      "F1": 45,
+      "F7": 214,
+      "F6": 111,
+      "F3": 34,
+      "F8": 1,
+      "F2": 4
+    },
+    "microsoft/phi-4": {
+      "F4": 71,
+      "F1": 66,
+      "F7": 239,
+      "F3": 38,
+      "F6": 67,
+      "F8": 17,
+      "F2": 2
+    }
+  },
+  "ensemble_distribution": {
+    "F4": 53,
+    "F1": 65,
+    "F7": 227,
+    "F6": 132,
+    "F3": 17,
+    "F8": 5,
+    "F2": 1
+  }
+}

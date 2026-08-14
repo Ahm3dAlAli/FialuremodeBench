@@ -1,0 +1,12 @@
+{
+  "n": 455,
+  "raw_agreement": 0.6154,
+  "cohen_kappa": 0.4425,
+  "per_family": {
+    "chart": 0.68,
+    "fine_grained": 0.8,
+    "general_vqa": 0.299,
+    "generic": 0.865,
+    "real_world": 0.323
+  }
+}

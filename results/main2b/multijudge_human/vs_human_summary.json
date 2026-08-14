@@ -1,0 +1,109 @@
+{
+  "n_errors": 460,
+  "vs_human": [
+    {
+      "judge": "deepseek/deepseek-v4-flash",
+      "n": 458,
+      "raw_agreement": 0.631,
+      "cohen_kappa": 0.464,
+      "na": 2,
+      "per_family": {
+        "chart": 0.788,
+        "fine_grained": 0.8,
+        "general_vqa": 0.33,
+        "generic": 0.814,
+        "real_world": 0.306
+      }
+    },
+    {
+      "judge": "openai/gpt-4o",
+      "n": 460,
+      "raw_agreement": 0.709,
+      "cohen_kappa": 0.57,
+      "na": 0,
+      "per_family": {
+        "chart": 0.85,
+        "fine_grained": 0.82,
+        "general_vqa": 0.43,
+        "generic": 0.898,
+        "real_world": 0.452
+      }
+    },
+    {
+      "judge": "openai/gpt-4o-mini",
+      "n": 460,
+      "raw_agreement": 0.461,
+      "cohen_kappa": 0.303,
+      "na": 0,
+      "per_family": {
+        "chart": 0.17,
+        "fine_grained": 0.81,
+        "general_vqa": 0.24,
+        "generic": 0.878,
+        "real_world": 0.065
+      }
+    },
+    {
+      "judge": "meta-llama/llama-3.3-70b-instruct",
+      "n": 460,
+      "raw_agreement": 0.493,
+      "cohen_kappa": 0.329,
+      "na": 0,
+      "per_family": {
+        "chart": 0.24,
+        "fine_grained": 0.81,
+        "general_vqa": 0.36,
+        "generic": 0.806,
+        "real_world": 0.113
+      }
+    },
+    {
+      "judge": "mistralai/mistral-large",
+      "n": 460,
+      "raw_agreement": 0.576,
+      "cohen_kappa": 0.41,
+      "na": 0,
+      "per_family": {
+        "chart": 0.46,
+        "fine_grained": 0.83,
+        "general_vqa": 0.35,
+        "generic": 0.847,
+        "real_world": 0.29
+      }
+    },
+    {
+      "judge": "deepseek/deepseek-chat",
+      "n": 460,
+      "raw_agreement": 0.561,
+      "cohen_kappa": 0.403,
+      "na": 0,
+      "per_family": {
+        "chart": 0.28,
+        "fine_grained": 0.81,
+        "general_vqa": 0.45,
+        "generic": 0.918,
+        "real_world": 0.226
+      }
+    },
+    {
+      "judge": "microsoft/phi-4",
+      "n": 460,
+      "raw_agreement": 0.522,
+      "cohen_kappa": 0.368,
+      "na": 0,
+      "per_family": {
+        "chart": 0.4,
+        "fine_grained": 0.81,
+        "general_vqa": 0.32,
+        "generic": 0.857,
+        "real_world": 0.048
+      }
+    }
+  ],
+  "ensemble_vs_human": {
+    "n": 460,
+    "raw": 0.615,
+    "cohen_kappa": 0.461
+  },
+  "inter_judge_mean_kappa": 0.559
+}

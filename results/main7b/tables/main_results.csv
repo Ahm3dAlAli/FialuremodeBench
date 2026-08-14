@@ -1,0 +1,2 @@
+model,recog_acc,vqa_score,macro_f1
+qwen2vl_7b,0.3352,0.8201,0.4369

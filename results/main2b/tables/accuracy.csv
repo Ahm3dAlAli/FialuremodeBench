@@ -1,0 +1,17 @@
+model,dataset,n,correct,accuracy
+qwen2vl_2b,ai2d,3088,2310,0.7481
+qwen2vl_2b,crpe,7576,5911,0.7802
+qwen2vl_2b,dtd,1000,76,0.076
+qwen2vl_2b,food101,1000,49,0.049
+qwen2vl_2b,imagenet,1000,141,0.141
+qwen2vl_2b,imagenet_a,1000,18,0.018
+qwen2vl_2b,imagenet_r,1000,104,0.104
+qwen2vl_2b,imagenet_sketch,1000,155,0.155
+qwen2vl_2b,imagenet_v2,1000,145,0.145
+qwen2vl_2b,mathverse,3940,1039,0.2637
+qwen2vl_2b,mathvista,1000,238,0.238
+qwen2vl_2b,mme,2374,1894,0.7978
+qwen2vl_2b,naturalbench,7600,4994,0.6571
+qwen2vl_2b,realworldqa,765,478,0.6248
+qwen2vl_2b,resisc45,1000,504,0.504
+qwen2vl_2b,seed,14232,10372,0.7288

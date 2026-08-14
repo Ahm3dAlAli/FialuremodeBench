@@ -1,0 +1,2 @@
+model,n_errors,F1,F2,F3,F4,F5,F6,F7,F8,F1_pct,F2_pct,F3_pct,F4_pct,F5_pct,F6_pct,F7_pct,F8_pct
+qwen2vl_7b,191,16,3,1,1,0,36,134,0,8.4,1.6,0.5,0.5,0.0,18.8,70.2,0.0

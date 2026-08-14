@@ -1,0 +1,127 @@
+{
+  "models": 1,
+  "confusion_files": [
+    "/Users/ahmeda./Desktop/FialuremodeBench /results/main2b/tables/confusion/qwen2vl_2b__dtd.csv",
+    "/Users/ahmeda./Desktop/FialuremodeBench /results/main2b/tables/confusion/qwen2vl_2b__food101.csv",
+    "/Users/ahmeda./Desktop/FialuremodeBench /results/main2b/tables/confusion/qwen2vl_2b__resisc45.csv"
+  ],
+  "dominant_by_family": {
+    "Generic": [
+      "F7",
+      88.6
+    ],
+    "Robustness": [
+      "F7",
+      66.1
+    ],
+    "Fine-grained": [
+      "F7",
+      98.9
+    ],
+    "Satellite": [
+      "F7",
+      66.7
+    ],
+    "Math": [
+      "F4",
+      78.3
+    ],
+    "General": [
+      "F6",
+      57.8
+    ],
+    "Real-World": [
+      "F1",
+      40.7
+    ],
+    "Counterfact.": [
+      "F1",
+      46.4
+    ],
+    "Chart": [
+      "F6",
+      73.3
+    ]
+  },
+  "count_mismatches": [
+    [
+      "imagenet",
+      1000,
+      49032
+    ],
+    [
+      "imagenet_v2",
+      1000,
+      9772
+    ],
+    [
+      "imagenet_a",
+      1000,
+      7467
+    ],
+    [
+      "imagenet_r",
+      1000,
+      28506
+    ],
+    [
+      "imagenet_sketch",
+      1000,
+      35350
+    ],
+    [
+      "dtd",
+      1000,
+      5640
+    ],
+    [
+      "food101",
+      1000,
+      25250
+    ],
+    [
+      "resisc45",
+      1000,
+      4500
+    ],
+    [
+      "mathverse",
+      3940,
+      1631
+    ],
+    [
+      "mathvista",
+      1000,
+      490
+    ],
+    [
+      "seed",
+      14232,
+      3881
+    ],
+    [
+      "mme",
+      2374,
+      1576
+    ],
+    [
+      "naturalbench",
+      7600,
+      1900
+    ],
+    [
+      "crpe",
+      7576,
+      7575
+    ],
+    [
+      "ai2d",
+      3088,
+      2704
+    ]
+  ],
+  "figures": [
+    "/Users/ahmeda./Desktop/FialuremodeBench /results/main2b/figures/failure_by_family.png",
+    "/Users/ahmeda./Desktop/FialuremodeBench /results/main2b/figures/accuracy_heatmap.png"
+  ]
+}

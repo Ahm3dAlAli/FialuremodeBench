@@ -1,0 +1,131 @@
+{
+  "n_common_errors": 175,
+  "judges": [
+    "gpt-4o",
+    "qwen-2.5-72b",
+    "llama-3.3-70b",
+    "mistral-large",
+    "deepseek-chat",
+    "phi-4"
+  ],
+  "pairwise_agreement": {
+    "gpt-4o vs qwen-2.5-72b": {
+      "raw_agreement": 0.72,
+      "cohen_kappa": 0.56
+    },
+    "gpt-4o vs llama-3.3-70b": {
+      "raw_agreement": 0.686,
+      "cohen_kappa": 0.526
+    },
+    "gpt-4o vs mistral-large": {
+      "raw_agreement": 0.84,
+      "cohen_kappa": 0.742
+    },
+    "gpt-4o vs deepseek-chat": {
+      "raw_agreement": 0.754,
+      "cohen_kappa": 0.615
+    },
+    "gpt-4o vs phi-4": {
+      "raw_agreement": 0.697,
+      "cohen_kappa": 0.54
+    },
+    "qwen-2.5-72b vs llama-3.3-70b": {
+      "raw_agreement": 0.697,
+      "cohen_kappa": 0.559
+    },
+    "qwen-2.5-72b vs mistral-large": {
+      "raw_agreement": 0.686,
+      "cohen_kappa": 0.526
+    },
+    "qwen-2.5-72b vs deepseek-chat": {
+      "raw_agreement": 0.749,
+      "cohen_kappa": 0.622
+    },
+    "qwen-2.5-72b vs phi-4": {
+      "raw_agreement": 0.611,
+      "cohen_kappa": 0.446
+    },
+    "llama-3.3-70b vs mistral-large": {
+      "raw_agreement": 0.714,
+      "cohen_kappa": 0.572
+    },
+    "llama-3.3-70b vs deepseek-chat": {
+      "raw_agreement": 0.737,
+      "cohen_kappa": 0.617
+    },
+    "llama-3.3-70b vs phi-4": {
+      "raw_agreement": 0.726,
+      "cohen_kappa": 0.597
+    },
+    "mistral-large vs deepseek-chat": {
+      "raw_agreement": 0.823,
+      "cohen_kappa": 0.728
+    },
+    "mistral-large vs phi-4": {
+      "raw_agreement": 0.72,
+      "cohen_kappa": 0.575
+    },
+    "deepseek-chat vs phi-4": {
+      "raw_agreement": 0.703,
+      "cohen_kappa": 0.568
+    }
+  },
+  "per_judge_distribution": {
+    "gpt-4o": {
+      "F3": 10,
+      "F1": 8,
+      "F6": 57,
+      "F7": 94,
+      "F8": 2,
+      "F4": 4
+    },
+    "qwen-2.5-72b": {
+      "F1": 9,
+      "F6": 72,
+      "F7": 73,
+      "F4": 20,
+      "F8": 1
+    },
+    "llama-3.3-70b": {
+      "F2": 4,
+      "F1": 24,
+      "F6": 41,
+      "F7": 82,
+      "F4": 22,
+      "F8": 2
+    },
+    "mistral-large": {
+      "F1": 24,
+      "F3": 8,
+      "F6": 44,
+      "F7": 94,
+      "F8": 1,
+      "F4": 4
+    },
+    "deepseek-chat": {
+      "F1": 20,
+      "F3": 9,
+      "F6": 54,
+      "F7": 82,
+      "F4": 9,
+      "F8": 1
+    },
+    "phi-4": {
+      "F1": 16,
+      "F6": 18,
+      "F7": 97,
+      "F2": 4,
+      "F4": 31,
+      "F8": 3,
+      "F3": 6
+    }
+  },
+  "ensemble_distribution": {
+    "F1": 16,
+    "F3": 6,
+    "F6": 51,
+    "F7": 94,
+    "F4": 7,
+    "F8": 1
+  }
+}
