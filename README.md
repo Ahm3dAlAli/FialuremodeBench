@@ -38,6 +38,48 @@ around Fabrication and Confabulation."*
 
 ---
 
+## Reproduce (no GPU / no API key)
+
+All model predictions and LLM-judge labels are cached under `results/*/`. Regenerate
+every table, figure, and the judge-validity analysis from that committed data:
+
+```bash
+pip install -r requirements.txt
+python reproduce.py            # tables + figures + judge-validity  (single entry point)
+# individual stages:
+python reproduce.py figures    # -> docs/figures/fig1-7.pdf + PNGs
+python reproduce.py agreement  # human-vs-judge + Fleiss' kappa (reads human_annotations/)
+python reproduce.py tables     # per-family F1-F8 tables -> results/main2b/tables/
+```
+
+**Re-running the heavy stages** (model inference + LLM judging; needs a GPU and an
+OpenAI-compatible judge key) uses the CLI:
+
+```bash
+export OPENAI_API_KEY=... OPENAI_BASE_URL=https://openrouter.ai/api/v1   # judge
+python -m failuremodebench.cli --run RUN --models M --datasets D infer-recognition  # / infer-vqa / infer-clip
+python -m failuremodebench.cli --run RUN judge          # LLM-judge errors -> corpus.jsonl
+python -m failuremodebench.cli --run RUN aggregate      # tables + summary
+```
+
+## Repository layout
+
+```
+failuremodebench/     core package (config, taxonomy, backends, recognition, vqa,
+                      judge, multijudge, aggregate, providers, cli)
+scripts/              make_figures.py, multi_annotator_agreement.py, make_human_study.py,
+                      expand_corpus.py, extract_vqa_images.py, ... (analysis + data prep)
+human_annotations/    annotator1_ahmed.json, annotator2_cui.json  (+ _archive/, README)
+results/<run>/        predictions/, corpus.jsonl (judged errors), tables/, figures/
+docs/                 RESULTS_SUMMARY.md, SETUP_AND_RESULTS.md,                       ABSTRACT_INTRO.md, FIGURE_CAPTIONS.md, figures/*.pdf, annotation study
+reproduce.py          single entry point (analysis from committed data)
+```
+
+Key result docs: **`docs/RESULTS_SUMMARY.md`** (paper-ready), `docs/SETUP_AND_RESULTS.md`
+(detailed methods + per-dataset tables), `docs/FIGURE_CAPTIONS.md`.
+
+---
+
 ## 2. The 8-category failure taxonomy (§3.2)
 
 Every incorrect prediction is assigned **exactly one** mode by the judge.
@@ -84,7 +126,7 @@ Two evaluation **modalities**:
 | General VQA | MME | vqa | General understanding | 1,576 / 2,370 |
 | Real-World | RealWorldQA | vqa | Real-world understanding | 765 / 765 |
 | Counterfactual | Capture | vqa | Counterfactual understanding | 817 / 962 |
-| Compositional | CRPE | vqa | Compositionality & hallucination | 7,575 / 7,575 |
+| General VQA | CRPE | vqa | General (compositional relations & hallucination) | 7,575 / 7,575 |
 | Chart | AI2D | vqa | Graph & chart understanding | 2,704 / 3,090 |
 
 *Preprocessing:* images with any side > 1000 px are dropped; "Used" reflects
@@ -94,7 +136,7 @@ post-filter counts. Exact HF paths and VLMEvalKit ids are in
 > **Two ids to verify on rolf** (VLMEvalKit ids drift across versions):
 > `crpe` (pick the right CRPE split) and `capture` (currently a `COCO_VAL`
 > **placeholder** — set to the actual counterfactual dataset id or drop it).
-> See [docs/LAUNCH.md](docs/LAUNCH.md).
+> See the **Reproduce** section above.
 
 ---
 
@@ -144,7 +186,6 @@ scripts/
   run_rolf.sh          on rolf: the full 4-stage pipeline
 configs/matrix.yaml    the evaluation matrix (models x datasets x judge settings)
 tests/test_pipeline.py offline end-to-end validation (no GPU, no key)
-docs/LAUNCH.md         exact launch steps + blockers + cost/time estimate
 results/<run>/         all outputs (git-ignored)
 ```
 
@@ -305,7 +346,7 @@ Percentages per row sum to ~100 — drop straight into a LaTeX table.
 
 | Symptom | Fix |
 |---------|-----|
-| `ssh: connect … port 22: timed out` | Not on campus — connect UZH VPN or use a `ProxyJump` (docs/LAUNCH.md) |
+| `ssh: connect … port 22: timed out` | Not on campus — connect UZH VPN or use a `ProxyJump` |
 | `imagenet-1k is a gated dataset` | `huggingface-cli login` on rolf (one time) |
 | CUDA OOM on a 7B/13B model | ensure `load_4bit`; cap Qwen2-VL max pixels; one model per GPU |
 | `… not in VLMEvalKit supported_VLM` | version mismatch — check the id: `python -c "from vlmeval.config import supported_VLM; print(list(supported_VLM))"` |
@@ -321,7 +362,7 @@ Harness **complete and validated offline**: recognition data path on real DTD;
 `judge → aggregate → figures` on synthetic corpora; all modules compile and the
 self-test passes. GPU inference is wired but not yet executed — pending a rolf
 launch (campus reach + `huggingface-cli login` + `ANTHROPIC_API_KEY`). See
-[docs/LAUNCH.md](docs/LAUNCH.md).
+the **Reproduce** section above.
 
 ## 14. Citation
 

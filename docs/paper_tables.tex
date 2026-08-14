@@ -1,0 +1,19 @@
+\begin{table}[t]\centering
+\caption{Main results (\%). Recognition = mean top-1; VQA = mean VLMEvalKit score; Macro-F1 on fine-grained sets.}\label{tab:main}
+\begin{tabular}{lccc}\toprule
+Model & Recog.\ Acc.\ $\uparrow$ & VQA Score $\uparrow$ & Macro-F1 $\uparrow$ \\\midrule
+    qwen2vl_7b & 33.5 & 76.1 & 43.7 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[t]\centering
+\caption{Failure-mode distribution by task family (\% of judged errors, rows sum to $\approx$100). Judge: deepseek-v4-flash.}\label{tab:failure}
+\begin{tabular}{lrcccccccc}\toprule
+Family & $n$ & F1 & F2 & F3 & F4 & F5 & F6 & F7 & F8 \\\midrule
+    Generic & 40 & 2 & 2 & 0 & 0 & 0 & 10 & 85 & 0 \\
+    Robustness & 47 & 8 & 2 & 0 & 0 & 0 & 8 & 81 & 0 \\
+    Fine-grained & 48 & 2 & 2 & 0 & 0 & 0 & 10 & 85 & 0 \\
+    Satellite & 21 & 0 & 0 & 0 & 0 & 0 & 10 & 90 & 0 \\
+    General & 35 & 29 & 0 & 3 & 3 & 0 & 60 & 6 & 0 \\
+\bottomrule\end{tabular}\end{table}
+
+% (no multi-judge summary found)
