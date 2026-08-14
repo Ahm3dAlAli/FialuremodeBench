@@ -1,0 +1,842 @@
+[
+ {
+  "error_key": "1c033652c7e58570",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "20996de52f54319e",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "20b3b0932d54cad2",
+  "family": "chart",
+  "judge": "NA",
+  "human": "F6"
+ },
+ {
+  "error_key": "24e80d6f69feb919",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "2bc1d296fc8ada24",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "2c34db53f9e11540",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "2e9b084e19e4bdba",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6"
+ },
+ {
+  "error_key": "2f12a32e0c234255",
+  "family": "chart",
+  "judge": "NA",
+  "human": "F6"
+ },
+ {
+  "error_key": "300501092d7844a4",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6"
+ },
+ {
+  "error_key": "3d843543c25f4378",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "3f977d8a3c2e3c5a",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6"
+ },
+ {
+  "error_key": "503cacc4c746112b",
+  "family": "chart",
+  "judge": "NA",
+  "human": "F6"
+ },
+ {
+  "error_key": "53cc736b34f0b6da",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "5459295b6595c0a9",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6"
+ },
+ {
+  "error_key": "58430063b2a868eb",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "5ee4dec68dfc5c73",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6"
+ },
+ {
+  "error_key": "5fea2dc9679ec0ad",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "61ec748e43d37d69",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6"
+ },
+ {
+  "error_key": "64020e5e980f1d0e",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "6a828ce7c5bf8523",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "0aff0b448ac6f792",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "0f0fed52a53b35f8",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "1280f27efc91f23d",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "1b0495f126f2c8f0",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "1f0928c698adb7da",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F3"
+ },
+ {
+  "error_key": "20bcead50615035a",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F2"
+ },
+ {
+  "error_key": "23c841a6f8e85196",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "2db8112ef70a531d",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "2f7eea4d43317136",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "34ace056c38b1059",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "403ddf69606f500b",
+  "family": "fine_grained",
+  "judge": "F6",
+  "human": "F7"
+ },
+ {
+  "error_key": "417a7c967d3dfe41",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "48481edc1aec59e4",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F3"
+ },
+ {
+  "error_key": "48fe4b513c10406b",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "50a82f2c09a9cfe2",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "53a5ea087762f297",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "573f30bc792d81dd",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "5915f9a63763ebed",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F3"
+ },
+ {
+  "error_key": "637d412f033472ce",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "670db5c2fd7bf373",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "00cefcba46ca3442",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F1"
+ },
+ {
+  "error_key": "037baad3be47b3c2",
+  "family": "general_vqa",
+  "judge": "NA",
+  "human": "F4"
+ },
+ {
+  "error_key": "06425867092ee945",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F1"
+ },
+ {
+  "error_key": "0b03fb0f80d29d6d",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F1"
+ },
+ {
+  "error_key": "0b1c008f6b05d026",
+  "family": "general_vqa",
+  "judge": "NA",
+  "human": "F4"
+ },
+ {
+  "error_key": "0f7fd46db6f127d7",
+  "family": "general_vqa",
+  "judge": "F8",
+  "human": "F1"
+ },
+ {
+  "error_key": "10b15354372b3208",
+  "family": "general_vqa",
+  "judge": "F2",
+  "human": "F1"
+ },
+ {
+  "error_key": "206eeee0a7d25aa1",
+  "family": "general_vqa",
+  "judge": "F2",
+  "human": "F6"
+ },
+ {
+  "error_key": "21b11bb41a6b0fda",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F1"
+ },
+ {
+  "error_key": "2206f53119061715",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F1"
+ },
+ {
+  "error_key": "257477805f80bf62",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F6"
+ },
+ {
+  "error_key": "3b1512df363ce985",
+  "family": "general_vqa",
+  "judge": "NA",
+  "human": "F6"
+ },
+ {
+  "error_key": "467133e6b56ec832",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F4"
+ },
+ {
+  "error_key": "477fac44529e1d6a",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "488595b2ce4f34fb",
+  "family": "general_vqa",
+  "judge": "NA",
+  "human": "F3"
+ },
+ {
+  "error_key": "48fd147fd978f1c3",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F1"
+ },
+ {
+  "error_key": "4cbb24b738ca9918",
+  "family": "general_vqa",
+  "judge": "F2",
+  "human": "F1"
+ },
+ {
+  "error_key": "54a20c22ca487c2e",
+  "family": "general_vqa",
+  "judge": "NA",
+  "human": "F1"
+ },
+ {
+  "error_key": "5a557581919ef8de",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "5a7cf69020301fa6",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F7"
+ },
+ {
+  "error_key": "0a688228decda029",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "0d3a001364760608",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "0f34b701264619dd",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "1728318714ec4fbc",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "1d29935adee6f6ae",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "25ce03e6d9d75737",
+  "family": "generic",
+  "judge": "F1",
+  "human": "F7"
+ },
+ {
+  "error_key": "2daa77942e96949b",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "2e4ea0be63805af2",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "2f8d980b96651f6d",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "2f8efe848785d3a8",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "34399bf02aff27b4",
+  "family": "generic",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "38ae55b71c177969",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F3"
+ },
+ {
+  "error_key": "3e6b9561dc6bd6ac",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "40deb5e93f82fd58",
+  "family": "generic",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "4538a3f64c56b3ca",
+  "family": "generic",
+  "judge": "NA",
+  "human": "F7"
+ },
+ {
+  "error_key": "45c6e096f80cdc7a",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "45d6076a4060b0dc",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "469d663b67882b8e",
+  "family": "generic",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "4712a31167f37d8e",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "4bec8835f00fee67",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "0ee9a33e3fb2d459",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6"
+ },
+ {
+  "error_key": "1181170d830c8a29",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6"
+ },
+ {
+  "error_key": "26f903f73e1eb988",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6"
+ },
+ {
+  "error_key": "29ab12de5499db5d",
+  "family": "real_world",
+  "judge": "F4",
+  "human": "F6"
+ },
+ {
+  "error_key": "2d15deac1e665d93",
+  "family": "real_world",
+  "judge": "F4",
+  "human": "F6"
+ },
+ {
+  "error_key": "30e67970f2345ad2",
+  "family": "real_world",
+  "judge": "NA",
+  "human": "F6"
+ },
+ {
+  "error_key": "329a627feaf320b5",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6"
+ },
+ {
+  "error_key": "3c8af1a87539d726",
+  "family": "real_world",
+  "judge": "NA",
+  "human": "F6"
+ },
+ {
+  "error_key": "4073786b2a58608c",
+  "family": "real_world",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "4e082972e7e754c4",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F2"
+ },
+ {
+  "error_key": "5115bf8c6f0d2dbe",
+  "family": "real_world",
+  "judge": "NA",
+  "human": "F6"
+ },
+ {
+  "error_key": "53f3c6d13d60c41a",
+  "family": "real_world",
+  "judge": "NA",
+  "human": "F6"
+ },
+ {
+  "error_key": "56e4754015d66228",
+  "family": "real_world",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "58625816c668a6d2",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6"
+ },
+ {
+  "error_key": "587461e052108c65",
+  "family": "real_world",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "5e813c26de9d8a66",
+  "family": "real_world",
+  "judge": "NA",
+  "human": "F2"
+ },
+ {
+  "error_key": "60da5fb20ff02dbf",
+  "family": "real_world",
+  "judge": "NA",
+  "human": "F6"
+ },
+ {
+  "error_key": "69fc7f02c0be2098",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6"
+ },
+ {
+  "error_key": "7c97ea2b09fd5028",
+  "family": "real_world",
+  "judge": "NA",
+  "human": "F6"
+ },
+ {
+  "error_key": "7e820815691983e9",
+  "family": "real_world",
+  "judge": "F4",
+  "human": "F6"
+ },
+ {
+  "error_key": "04517683044b3f5e",
+  "family": "robustness",
+  "judge": "F1",
+  "human": "F2"
+ },
+ {
+  "error_key": "0f65d46363fe0ff2",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "10961d798b926bb7",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "1bb398417549f435",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "1f10417e35110e34",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "1fb0d6214b5e3cef",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "27ff97995a10e8dc",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "2a702380c25e3e8e",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "3b1119f86a9f92d2",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "3e172600caa3f580",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "3e4165d12b89b115",
+  "family": "robustness",
+  "judge": "NA",
+  "human": "F3"
+ },
+ {
+  "error_key": "40fd91e3f8cc28e3",
+  "family": "robustness",
+  "judge": "NA",
+  "human": "F7"
+ },
+ {
+  "error_key": "50b882c180a58fd2",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "581429ba7d44d814",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "5c839baa3b7f559a",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "6434e370b6e31b53",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F2"
+ },
+ {
+  "error_key": "654519b5bcc836bf",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "668aba10dfd4ab44",
+  "family": "robustness",
+  "judge": "NA",
+  "human": "F3"
+ },
+ {
+  "error_key": "775809e10e393f02",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "7bf853b77d74b61f",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7"
+ },
+ {
+  "error_key": "022a48f0c27be957",
+  "family": "satellite",
+  "judge": "NA",
+  "human": "F3"
+ },
+ {
+  "error_key": "110292b15204a9c4",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F3"
+ },
+ {
+  "error_key": "12f15cc30596d448",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "14703168ca527be0",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "1a1b5bcd9184ec89",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F6"
+ },
+ {
+  "error_key": "344830b92f8251dc",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "391a28d4a0889dec",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "3b0cb217aa125e8b",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "3bfc944fe9a4ff61",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "3c87bf4bce2f7ede",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "3e0ac4c488dad32f",
+  "family": "satellite",
+  "judge": "F6",
+  "human": "F1"
+ },
+ {
+  "error_key": "439f1317f055a553",
+  "family": "satellite",
+  "judge": "NA",
+  "human": "F3"
+ },
+ {
+  "error_key": "490a6e16ef09f131",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "4f44587af402b1f2",
+  "family": "satellite",
+  "judge": "F6",
+  "human": "F6"
+ },
+ {
+  "error_key": "51e977221ceaf8be",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "5782d3e9926b2af3",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "59f421439a0405f3",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "59f9abf08255490b",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "5a6bb0b4dc82a33b",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ },
+ {
+  "error_key": "645bd419e29737a1",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1"
+ }
+]

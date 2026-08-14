@@ -1,0 +1,1402 @@
+[
+ {
+  "error_key": "1c033652c7e58570",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly reads the visual information (the chart labels stages A, B, C, D), but misattributes the property 'High Tides' to stage A when it should be assigned to some other stage (likely sta",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "20996de52f54319e",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies that the question is about carbon dioxide absorption, but misattributes the absorption process to 'root' (option A) instead of the correct answer 'B' (likely 'stomata' o",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "20b3b0932d54cad2",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies that the image is a diagram of an insect with labeled parts, but it misattributes the label 'B' to 'Legs' instead of the correct 'Mouthparts'. The visual entity (label B",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "24e80d6f69feb919",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model incorrectly assigned the property 'pointing to the pedipalp' to label B instead of the correct label A, which is a clear case of misattribution of a property to the wrong entity in the diagr",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "2bc1d296fc8ada24",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model incorrectly attributed the property 'crenate' to leaf C instead of leaf D, which is a clear case of assigning a property to the wrong entity.",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "2c34db53f9e11540",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model output assigns the date 'September 22-23' to stage B, but the gold answer indicates the correct date for stage B is 'C'. This is a misattribution of a property (date) to the wrong entity (st",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "2e9b084e19e4bdba",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies that the diagram contains labeled points (A, B, C, D) representing positions in Earth's orbit around the Sun, and it understands the question asks for the Vernal Equinox",
+  "dataset": "ai2d",
+  "agree": false
+ },
+ {
+  "error_key": "2f12a32e0c234255",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model correctly identified that the image depicts a cell diagram with labeled parts, and it recognized that C points to a small dot-like structure. However, it misattributed the identity of that s",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "300501092d7844a4",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model likely identified the magnetic meridian line on the chart correctly but then misread or misassigned the corresponding letter label, resulting in choosing 'A' instead of 'D'. This indicates a",
+  "dataset": "ai2d",
+  "agree": false
+ },
+ {
+  "error_key": "3d843543c25f4378",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies that the question asks about the product at letter A, but it misattributes the label 'glucose' to that position. In the image, letter A likely points to a different prod",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "3f977d8a3c2e3c5a",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies the letter 'D' as the answer, but the question asks for the stage representing the winter solstice, which is D. However, the model outputs 'A. D', which suggests it may ",
+  "dataset": "ai2d",
+  "agree": false
+ },
+ {
+  "error_key": "503cacc4c746112b",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.8,
+  "judge_rationale": "The model selected letter A instead of the correct letter D, indicating that it attributed the 'fruit development stage' to the wrong region of the diagram.",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "53cc736b34f0b6da",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'A. A' indicates it selected label A instead of the correct label C. Since the image is a chart (from AI2D) with labeled parts, the model likely misattributed the property 'leaves' to",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "5459295b6595c0a9",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly reads the visual labels (A, B, C, D) and the numeric values from the chart, but it incorrectly combines them. The question asks 'which of the label show many leaf' \u2014 likely meaning",
+  "dataset": "ai2d",
+  "agree": false
+ },
+ {
+  "error_key": "58430063b2a868eb",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies the task involves a diagram with leaf types labeled by letters. It produces 'D. BIPINNATE', but the gold answer is 'A'. The letter E likely points to a specific leaf sha",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "5ee4dec68dfc5c73",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies that the question asks about a leaf type for a Cottonwood tree, and it likely reads the chart labels (A, B, C, D) and the leaf images. However, it outputs 'D. B', which ",
+  "dataset": "ai2d",
+  "agree": false
+ },
+ {
+  "error_key": "5fea2dc9679ec0ad",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies that the question asks about solar tides in a diagram, but it misattributes the label 'E' to solar tides instead of the correct label 'B'. The model likely sees multiple",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "61ec748e43d37d69",
+  "family": "chart",
+  "judge": "F4",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies the high arc in the image (a chart showing a curve) but misreads the labeling or combines the visual information incorrectly, outputting 'D. A' instead of the correct le",
+  "dataset": "ai2d",
+  "agree": false
+ },
+ {
+  "error_key": "64020e5e980f1d0e",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies that the image shows a diagram of a leaf (likely a cross-section or labeled parts), and it correctly reads the label 'A' pointing to a specific part. However, it misattr",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "6a828ce7c5bf8523",
+  "family": "chart",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.8,
+  "judge_rationale": "The model correctly identified the moon phase type (waxing gibbous) but misattributed it to stage B instead of the correct stage C. The phase label is accurate for a different stage in the diagram, so",
+  "dataset": "ai2d",
+  "agree": true
+ },
+ {
+  "error_key": "0aff0b448ac6f792",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'pastries' is a broader parent category of the correct fine-grained label 'beignets', indicating overgeneralization.",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "0f0fed52a53b35f8",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'pastries' is a super-category of the correct fine-grained label 'beignets'. This is a classic overgeneralization where the model fails to provide the specific subclass required by th",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "1280f27efc91f23d",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model answered 'pastries' which is a broader super-category (hypernym) of the correct fine-grained label 'beignets'. This exactly matches the definition of Overgeneralization: applying a broad/sup",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "1b0495f126f2c8f0",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'pastries' is a broader category that includes the correct fine-grained label 'beignets', indicating overgeneralization from the specific to the general class.",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "1f0928c698adb7da",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F3",
+  "judge_confidence": 0.97,
+  "judge_rationale": "The model output 'Food' is a broad super-category label instead of the required fine-grained subclass 'beignets'. This is a classic overgeneralization failure: the model recognizes that the image cont",
+  "dataset": "food101",
+  "agree": false
+ },
+ {
+  "error_key": "20bcead50615035a",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F2",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'breakfast' is a broad super-category (meal type) instead of the required fine-grained food item 'beignets'. This matches the definition of overgeneralization: applying a super-catego",
+  "dataset": "food101",
+  "agree": false
+ },
+ {
+  "error_key": "23c841a6f8e85196",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model outputs 'Dessert', which is a broad super-category of the correct fine-grained label 'beignets'. It identifies the general class correctly but fails to provide the required specific subclass",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "2db8112ef70a531d",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'pastries' is a broader super-category of the correct fine-grained label 'beignets', which is a classic case of overgeneralization.",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "2f7eea4d43317136",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'pastries' is a super-category of the correct fine-grained label 'beignets'. The model recognized the food as a pastry but did not provide the specific subclass, which is overgenerali",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "34ace056c38b1059",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'pastries' is a broader super-category of the correct fine-grained label 'beignets'. The model correctly identified the general type of food but failed to provide the specific subclas",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "403ddf69606f500b",
+  "family": "fine_grained",
+  "judge": "F6",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model assigned the category 'donuts' to the image, but the correct fine-grained category is 'beignets'. Both are specific types of fried dough pastries, so the model misattributed the wrong specif",
+  "dataset": "food101",
+  "agree": false
+ },
+ {
+  "error_key": "417a7c967d3dfe41",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'pastries' is a broader super-category of the correct fine-grained label 'beignets'. The model correctly identified the general type of food but failed to provide the specific subclas",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "48481edc1aec59e4",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F3",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'Food' is a broad super-category of the correct fine-grained label 'beignets'. It recognized the general category but failed to provide the required specific subclass, which is exactl",
+  "dataset": "food101",
+  "agree": false
+ },
+ {
+  "error_key": "48fe4b513c10406b",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'pastries' is a broader super-category of the correct fine-grained label 'beignets'. The model correctly identified the general type of food but failed to provide the specific subclas",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "50a82f2c09a9cfe2",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model correctly identifies the item as a dessert but uses the broad super-category 'Dessert' instead of the required fine-grained subclass 'beignets'. This is applying a parent category instead of",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "53a5ea087762f297",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model identified the main subject as 'Dessert', which is a broad super-category of the correct fine-grained label 'beignets'. It recognized the general food type but failed to provide the required",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "573f30bc792d81dd",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Bread' is a broader super-category of the correct fine-grained label 'beignets'. Beignets are a type of fried dough pastry, which falls under the general category of bread-like items",
+  "dataset": "food101",
+  "agree": false
+ },
+ {
+  "error_key": "5915f9a63763ebed",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F3",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model outputs the broad superordinate category 'Food' instead of the required fine-grained subclass 'beignets', which is exactly an overgeneralization from the specific dish to its general categor",
+  "dataset": "food101",
+  "agree": false
+ },
+ {
+  "error_key": "637d412f033472ce",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.97,
+  "judge_rationale": "The model identified the image as 'Dessert', which is a broad super-category of the correct fine-grained label 'beignets'. It did not hallucinate an absent object or misattribute a property; it simply",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "670db5c2fd7bf373",
+  "family": "fine_grained",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'pastries' is a broader super-category that includes the correct fine-grained label 'beignets'. The model correctly identified the general class but failed to provide the specific cat",
+  "dataset": "food101",
+  "agree": true
+ },
+ {
+  "error_key": "00cefcba46ca3442",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F1",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model claims there are two dogs in the picture, but the gold answer indicates this is incorrect. Since the model asserts the presence of a specific number of dogs that are not actually in the imag",
+  "dataset": "mme",
+  "agree": true
+ },
+ {
+  "error_key": "037baad3be47b3c2",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F4",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model claimed the logo contains the word 'angle's', but the gold answer indicates it does not. This is a visual hallucination where the model reports a visual entity (the specific word) that is ab",
+  "dataset": "mme",
+  "agree": false
+ },
+ {
+  "error_key": "06425867092ee945",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model claims there are three bananas in the image, but the gold answer indicates this is false. Since the model reports a visual entity (bananas) that is absent or miscounted, this is a visual hal",
+  "dataset": "mme",
+  "agree": true
+ },
+ {
+  "error_key": "0b03fb0f80d29d6d",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F1",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identified the elephant and rock but misattributed the spatial relationship, choosing 'beside' instead of the correct 'in front of'. This is a misattribution of the relation betwee",
+  "dataset": "crpe",
+  "agree": false
+ },
+ {
+  "error_key": "0b1c008f6b05d026",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F4",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model reported 3 windows, but the image contains 4 windows. This is a visual hallucination where the model 'sees' fewer windows than actually present, likely due to missing or miscounting a window",
+  "dataset": "seed",
+  "agree": false
+ },
+ {
+  "error_key": "0f7fd46db6f127d7",
+  "family": "general_vqa",
+  "judge": "F8",
+  "human": "F1",
+  "judge_confidence": 0.6,
+  "judge_rationale": "The model chose 'over' (B) instead of 'in front of' (A). The image likely shows a tree in front of a mountain, and the model produced a plausible but incorrect spatial relation. This is not a hallucin",
+  "dataset": "crpe",
+  "agree": false
+ },
+ {
+  "error_key": "10b15354372b3208",
+  "family": "general_vqa",
+  "judge": "F2",
+  "human": "F1",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model incorrectly affirms that the logo contains the phrase 'the beats story liver pool', which is not present in the image. This is an unsupported verbal claim not grounded in the visual input, f",
+  "dataset": "mme",
+  "agree": false
+ },
+ {
+  "error_key": "206eeee0a7d25aa1",
+  "family": "general_vqa",
+  "judge": "F2",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model answered 'yes' to the question 'Does this artwork belong to the type of study?' without any visual or textual evidence in the image supporting that claim. The gold answer is 'no', indicating",
+  "dataset": "mme",
+  "agree": false
+ },
+ {
+  "error_key": "21b11bb41a6b0fda",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F1",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies both the elephant and the dog in the image, but misattributes the relationship between them. The gold answer states the elephant is beside the dog, while the model claim",
+  "dataset": "crpe",
+  "agree": false
+ },
+ {
+  "error_key": "2206f53119061715",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model claims there are two fingers with blue nail polish, but the gold answer indicates the correct count is D (likely four). The image likely shows a hand with multiple fingers painted blue, and ",
+  "dataset": "seed",
+  "agree": true
+ },
+ {
+  "error_key": "257477805f80bf62",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F6",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model answered 'B. Blue' but the gold answer is 'C', indicating the sky is not blue in the image. The model hallucinated a visual attribute (color) that is not present, which is a visual hallucina",
+  "dataset": "seed",
+  "agree": false
+ },
+ {
+  "error_key": "3b1512df363ce985",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F6",
+  "judge_confidence": 0.85,
+  "judge_rationale": "The correct answer identifies the soap dispenser as plastic, but the model answered chrome, attributing a metallic finish/feature that is not present in the image. This is a visual hallucination of an",
+  "dataset": "seed",
+  "agree": false
+ },
+ {
+  "error_key": "467133e6b56ec832",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F4",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model claims the large neon sign is red, but the gold answer indicates it is not red (likely another color like blue or green). Since the model reports a color that is absent from the image (the s",
+  "dataset": "seed",
+  "agree": false
+ },
+ {
+  "error_key": "477fac44529e1d6a",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies a chair near the desk but assigns the wrong color (tan) to it. The gold answer indicates a different dominant color (A), so the model misattributes the color property to",
+  "dataset": "seed",
+  "agree": true
+ },
+ {
+  "error_key": "488595b2ce4f34fb",
+  "family": "general_vqa",
+  "judge": "F8",
+  "human": "F3",
+  "judge_confidence": 0.6,
+  "judge_rationale": "The model produced a simple 'No' without any visual or textual justification. The image likely depicts an artwork that is indeed in the Vatican Pinacoteca, but the model's answer is a plausible-soundi",
+  "dataset": "mme",
+  "agree": false
+ },
+ {
+  "error_key": "48fd147fd978f1c3",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F1",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identified the rock and elephant but misattributed the spatial relationship, choosing 'in front of' instead of the correct 'beside'. This is a misassignment of the relation to the ",
+  "dataset": "crpe",
+  "agree": false
+ },
+ {
+  "error_key": "4cbb24b738ca9918",
+  "family": "general_vqa",
+  "judge": "F2",
+  "human": "F1",
+  "judge_confidence": 0.8,
+  "judge_rationale": "The model incorrectly answered 'yes' to whether the artwork is historical, but the gold answer is 'no'. The image likely does not depict a historical artwork, so the model's claim that it is historica",
+  "dataset": "mme",
+  "agree": false
+ },
+ {
+  "error_key": "54a20c22ca487c2e",
+  "family": "general_vqa",
+  "judge": "F1",
+  "human": "F1",
+  "judge_confidence": 0.8,
+  "judge_rationale": "The model answered 'Yes' to whether there are four laptops in the picture, but the gold answer is 'No'. This indicates the model claimed the presence of four laptops when the image does not contain th",
+  "dataset": "mme",
+  "agree": true
+ },
+ {
+  "error_key": "5a557581919ef8de",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies the person and the table, but misattributes the spatial relationship: it says 'over' (which would imply above/on top) instead of 'beside' (next to). This is a misattribu",
+  "dataset": "crpe",
+  "agree": true
+ },
+ {
+  "error_key": "5a7cf69020301fa6",
+  "family": "general_vqa",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies that there is a woman in the image (so not a hallucination or fabrication), but misattributes the count: the gold answer is 'A' (likely meaning zero or a specific number",
+  "dataset": "seed",
+  "agree": true
+ },
+ {
+  "error_key": "0a688228decda029",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Fish' is a broad super-category of the correct fine-grained label 'tench'. This is a clear case of overgeneralization, where the model fails to provide the specific subclass required",
+  "dataset": "imagenet",
+  "agree": true
+ },
+ {
+  "error_key": "0d3a001364760608",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model correctly identified the subject as a fish but used the broader super-category 'Fish' instead of the required specific label 'tench', which is a classic case of overgeneralization.",
+  "dataset": "imagenet",
+  "agree": true
+ },
+ {
+  "error_key": "0f34b701264619dd",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'Reptile' is a broad super-category of the correct fine-grained label 'fire salamander', which is a classic case of overgeneralization.",
+  "dataset": "imagenet_v2",
+  "agree": true
+ },
+ {
+  "error_key": "1728318714ec4fbc",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model recognized the subject as a fish but failed to identify the specific species (tench). It used the super-category 'Fish' instead of the fine-grained label 'tench'.",
+  "dataset": "imagenet",
+  "agree": true
+ },
+ {
+  "error_key": "1d29935adee6f6ae",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.98,
+  "judge_rationale": "The model output 'Fish' is a broad super-category of the correct fine-grained label 'tench', which is a specific type of fish. This matches the definition of overgeneralization (F7).",
+  "dataset": "imagenet",
+  "agree": true
+ },
+ {
+  "error_key": "25ce03e6d9d75737",
+  "family": "generic",
+  "judge": "F1",
+  "human": "F7",
+  "judge_confidence": 0.92,
+  "judge_rationale": "The gold label is 'tench', a fish, but the model outputs 'Bird', naming a visual category that is not present in the image. Since the image contains a tench, not a bird, the model reports a visual ent",
+  "dataset": "imagenet",
+  "agree": false
+ },
+ {
+  "error_key": "2daa77942e96949b",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'animal' is a broad super-category of the correct fine-grained label 'giant panda'. This matches the definition of overgeneralization: applying a super-category label instead of the r",
+  "dataset": "imagenet_v2",
+  "agree": true
+ },
+ {
+  "error_key": "2e4ea0be63805af2",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.98,
+  "judge_rationale": "The model identified the main subject correctly at a broad level ('Fish') but failed to provide the required fine-grained subclass label ('tench'), which is the definition of overgeneralization.",
+  "dataset": "imagenet",
+  "agree": true
+ },
+ {
+  "error_key": "2f8d980b96651f6d",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Fish' is a broad super-category of the correct fine-grained label 'tench', which is a specific type of fish. This fits F7 Overgeneralization, where the model applies a general catego",
+  "dataset": "imagenet",
+  "agree": true
+ },
+ {
+  "error_key": "2f8efe848785d3a8",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'Fish' is a broader super-category of the correct fine-grained label 'tench', matching the definition of overgeneralization. The model correctly identified the animal as a fish but fa",
+  "dataset": "imagenet",
+  "agree": true
+ },
+ {
+  "error_key": "34399bf02aff27b4",
+  "family": "generic",
+  "judge": "F6",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Fisherman' instead of the correct fine-grained category 'tench' (a fish). The image likely depicts a tench, but the model attributed the wrong entity (a person) to the image, which i",
+  "dataset": "imagenet",
+  "agree": false
+ },
+ {
+  "error_key": "38ae55b71c177969",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F3",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Panda' is a broader category than the required fine-grained 'giant panda', fitting the definition of overgeneralization (F7).",
+  "dataset": "imagenet_v2",
+  "agree": false
+ },
+ {
+  "error_key": "3e6b9561dc6bd6ac",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'Fish' is a broader parent category of the correct fine-grained label 'tench'. This matches the definition of overgeneralization, as the model failed to provide the specific subclass ",
+  "dataset": "imagenet",
+  "agree": true
+ },
+ {
+  "error_key": "40deb5e93f82fd58",
+  "family": "generic",
+  "judge": "F6",
+  "human": "F3",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Fisherman' is a category that does not match the gold label 'tench' (a fish). The image likely depicts a tench, but the model incorrectly attributes a human role (fisherman) to the i",
+  "dataset": "imagenet",
+  "agree": false
+ },
+ {
+  "error_key": "4538a3f64c56b3ca",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'Reptile' is a broad super-category of the correct fine-grained label 'fire salamander', which is a classic overgeneralization error.",
+  "dataset": "imagenet_v2",
+  "agree": true
+ },
+ {
+  "error_key": "45c6e096f80cdc7a",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.98,
+  "judge_rationale": "The model identified the visible subject only as 'Flowers', a broad super-category, instead of the required fine-grained label 'yellow lady's slipper'. This is a classic overgeneralization failure: th",
+  "dataset": "imagenet_v2",
+  "agree": true
+ },
+ {
+  "error_key": "45d6076a4060b0dc",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'Fish' is a broad super-category of the correct fine-grained label 'tench', which is a specific type of fish. This is a classic case of overgeneralization, where the model uses a pare",
+  "dataset": "imagenet",
+  "agree": true
+ },
+ {
+  "error_key": "469d663b67882b8e",
+  "family": "generic",
+  "judge": "F6",
+  "human": "F3",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies a human figure in the image (a fisherman) but misattributes the category label to the person instead of the fish (tench), which is the actual main subject. The property ",
+  "dataset": "imagenet",
+  "agree": false
+ },
+ {
+  "error_key": "4712a31167f37d8e",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Reptile' is a broad super-category instead of the required fine-grained subclass 'fire salamander'. This is a classic overgeneralization: the model fails to identify the specific spe",
+  "dataset": "imagenet_v2",
+  "agree": true
+ },
+ {
+  "error_key": "4bec8835f00fee67",
+  "family": "generic",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Flower' is a broad super-category that includes the correct fine-grained class 'yellow lady's slipper'. It failed to provide the required specific subclass label, which is overgenera",
+  "dataset": "imagenet_v2",
+  "agree": true
+ },
+ {
+  "error_key": "0ee9a33e3fb2d459",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model claimed there is 1 sedan, but the correct answer indicates 0 sedans. This means the model reported a visual entity (a sedan) that is absent from the image, which is a visual hallucination.",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "1181170d830c8a29",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model output claims there is 1 lane to the right, but the image shows multiple lanes. The model is hallucinating a single lane where multiple exist, which is a visual hallucination of a non-existe",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "26f903f73e1eb988",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model incorrectly claimed the traffic light is green, but the correct answer indicates it is not. This is a visual hallucination where the model perceives a green light that is absent from the ima",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "29ab12de5499db5d",
+  "family": "real_world",
+  "judge": "F4",
+  "human": "F6",
+  "judge_confidence": 0.85,
+  "judge_rationale": "The model likely correctly identified both the construction zone and the stop sign in the image, but made an error in spatial reasoning about their relative distances. This is a fusion error where ind",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "2d15deac1e665d93",
+  "family": "real_world",
+  "judge": "F4",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identified the objects (motorcycles) but miscounted their quantity, indicating a failure in integrating visual evidence into a correct numerical answer. This is a fusion error wher",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "30e67970f2345ad2",
+  "family": "real_world",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.6,
+  "judge_rationale": "The model answered 1 oncoming vehicle instead of the correct 2, indicating it likely misclassified one of the vehicles as not oncoming (or failed to attribute the 'oncoming' property to it). This is a",
+  "dataset": "realworldqa",
+  "agree": true
+ },
+ {
+  "error_key": "329a627feaf320b5",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model claims there is 1 sedan within 5 meters of the camera, but the correct answer is A (likely 0 or none). This indicates the model is hallucinating the presence of a sedan that does not exist i",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "3c8af1a87539d726",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model incorrectly counted 2 lanes instead of 1, likely perceiving an extra lane that does not exist in the image, which is a visual hallucination.",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "4073786b2a58608c",
+  "family": "real_world",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model correctly identifies the guitar and the table as present in the image, but misattributes the spatial relationship: it says the guitar is to the right of the table, while the gold answer indi",
+  "dataset": "realworldqa",
+  "agree": true
+ },
+ {
+  "error_key": "4e082972e7e754c4",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F2",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model claims a lawnmower is sticking up in the truck, but the gold answer indicates a different object (A). Since the image likely does not contain a lawnmower, the model is hallucinating a visual",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "5115bf8c6f0d2dbe",
+  "family": "real_world",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model incorrectly assigned the property of being closer to the sedan when the minivan is actually closer, misattributing a spatial relationship to the wrong vehicle.",
+  "dataset": "realworldqa",
+  "agree": true
+ },
+ {
+  "error_key": "53f3c6d13d60c41a",
+  "family": "real_world",
+  "judge": "F3",
+  "human": "F6",
+  "judge_confidence": 0.7,
+  "judge_rationale": "The model incorrectly answered 0 pedestrians when the image contains 2 pedestrians. This suggests a failure to align the visual input with the question, likely due to the model ignoring or misinterpre",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "56e4754015d66228",
+  "family": "real_world",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model correctly identifies that pedestrians are crossing, but misattributes the direction of crossing. The gold answer is 'B' (likely right to left or some other direction), while the model says '",
+  "dataset": "realworldqa",
+  "agree": true
+ },
+ {
+  "error_key": "58625816c668a6d2",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model claims there is 1 car traveling in the opposite direction, but the correct answer is B (2 cars). This suggests the model failed to visually perceive one of the cars, effectively 'hallucinati",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "587461e052108c65",
+  "family": "real_world",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model incorrectly assigned the property 'same direction' to the car closest to us, when the correct property is 'opposite direction'. This is a misattribution of a directional attribute to the cor",
+  "dataset": "realworldqa",
+  "agree": true
+ },
+ {
+  "error_key": "5e813c26de9d8a66",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F2",
+  "judge_confidence": 0.8,
+  "judge_rationale": "The model chose 'keep straight' but the correct answer is 'turn right'. This suggests the model likely failed to correctly perceive the road layout or the Walgreens location in the image, possibly hal",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "60da5fb20ff02dbf",
+  "family": "real_world",
+  "judge": "F6",
+  "human": "F6",
+  "judge_confidence": 0.7,
+  "judge_rationale": "The model incorrectly counted 2 green lights instead of 3, likely because it misattributed the color of one green light to another color, resulting in an undercount. This falls under misattribution of",
+  "dataset": "realworldqa",
+  "agree": true
+ },
+ {
+  "error_key": "69fc7f02c0be2098",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model claims the handles are facing up, but the image shows handles facing to the side (likely left or right). The model hallucinates a direction ('up') that is not present in the image.",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "7c97ea2b09fd5028",
+  "family": "real_world",
+  "judge": "F1",
+  "human": "F6",
+  "judge_confidence": 0.7,
+  "judge_rationale": "The model incorrectly answers '1 lane' when the gold answer is '2 lanes', indicating it failed to perceive the correct number of left-turn lanes in the image. This is a visual counting error, where th",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "7e820815691983e9",
+  "family": "real_world",
+  "judge": "F4",
+  "human": "F6",
+  "judge_confidence": 0.7,
+  "judge_rationale": "The model correctly identified the objects (water and tater tots) but incorrectly integrated the spatial cues to determine their relative position, leading to a wrong answer. This is a fusion error wh",
+  "dataset": "realworldqa",
+  "agree": false
+ },
+ {
+  "error_key": "04517683044b3f5e",
+  "family": "robustness",
+  "judge": "F1",
+  "human": "F2",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Street Art' which is a visual entity not present in the image. The image actually contains an afghan hound (dog breed), so the model hallucinated an entirely different concept, indic",
+  "dataset": "imagenet_r",
+  "agree": false
+ },
+ {
+  "error_key": "0f65d46363fe0ff2",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Stripes' is a broader category than the required fine-grained label 'banded'. This is a clear case of overgeneralization, where a super-category is used instead of the specific subcl",
+  "dataset": "dtd",
+  "agree": true
+ },
+ {
+  "error_key": "10961d798b926bb7",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'textile' is a broad super-category (material type) that includes the correct fine-grained texture 'banded'. The image likely shows a banded texture on a textile, but the model overge",
+  "dataset": "dtd",
+  "agree": true
+ },
+ {
+  "error_key": "1bb398417549f435",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'textile' is a broad super-category instead of the required fine-grained texture label 'banded', which is a clear case of overgeneralization.",
+  "dataset": "dtd",
+  "agree": true
+ },
+ {
+  "error_key": "1f10417e35110e34",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'Dog' is a broad super-category of the correct fine-grained label 'afghan_hound', which is a classic case of overgeneralization.",
+  "dataset": "imagenet_r",
+  "agree": true
+ },
+ {
+  "error_key": "1fb0d6214b5e3cef",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model produced 'fish', which is a broad super-category of the correct fine-grained label 'stingray'. This matches the overgeneralization failure mode where a broader parent category is used instea",
+  "dataset": "imagenet_a",
+  "agree": true
+ },
+ {
+  "error_key": "27ff97995a10e8dc",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'textile' is a broad super-category (material type) instead of the required fine-grained texture class 'banded'. This matches Overgeneralization: applying a general label when a speci",
+  "dataset": "dtd",
+  "agree": true
+ },
+ {
+  "error_key": "2a702380c25e3e8e",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'dogs' is a broader parent category of the correct fine-grained label 'afghan_hound'. The model correctly identifies the animal as a dog but fails to provide the specific breed, which",
+  "dataset": "imagenet_r",
+  "agree": true
+ },
+ {
+  "error_key": "3b1119f86a9f92d2",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'landscape' is a broad scene category, whereas the correct answer 'park bench' is a specific object. This is a classic case of overgeneralization: applying a super-category label inst",
+  "dataset": "imagenet_sketch",
+  "agree": true
+ },
+ {
+  "error_key": "3e172600caa3f580",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'Dog' is a broad super-category label instead of the required fine-grained subclass 'afghan_hound'. This matches the definition of Overgeneralization: applying a broad/super-category ",
+  "dataset": "imagenet_r",
+  "agree": true
+ },
+ {
+  "error_key": "3e4165d12b89b115",
+  "family": "robustness",
+  "judge": "F1",
+  "human": "F3",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model output 'Bar' refers to a visual entity (a bar) that is absent from the image, which is a sketch of a bakery. This constitutes a visual hallucination of a non-existent scene.",
+  "dataset": "imagenet_sketch",
+  "agree": false
+ },
+ {
+  "error_key": "40fd91e3f8cc28e3",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Art' is a broad super-category label instead of the required fine-grained subclass 'afghan_hound'. This matches the definition of Overgeneralization: applying a broad/super-category ",
+  "dataset": "imagenet_r",
+  "agree": true
+ },
+ {
+  "error_key": "50b882c180a58fd2",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'Animals' is a broad super-category of the correct fine-grained label 'Bloodhound'. This is a classic overgeneralization where the model uses a parent category instead of the specific",
+  "dataset": "imagenet_sketch",
+  "agree": true
+ },
+ {
+  "error_key": "581429ba7d44d814",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'textile' is a broad super-category (material type) instead of the required fine-grained texture class 'banded'. This is a classic overgeneralization: the model correctly identifies t",
+  "dataset": "dtd",
+  "agree": true
+ },
+ {
+  "error_key": "5c839baa3b7f559a",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model outputs 'fish', which is a broad super-category for the correct fine-grained label 'stingray'. This matches overgeneralization: applying a broader class label instead of the required subclas",
+  "dataset": "imagenet_a",
+  "agree": true
+ },
+ {
+  "error_key": "6434e370b6e31b53",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F2",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Health' is a broad superordinate concept rather than the required fine-grained object category 'Band-Aid'. The sketch depicts a band-aid, but the model overgeneralized to a high-leve",
+  "dataset": "imagenet_sketch",
+  "agree": false
+ },
+ {
+  "error_key": "654519b5bcc836bf",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Fish' is a broad super-category of the correct fine-grained label 'stingray'. The model recognized the animal as a fish but failed to provide the specific subclass, which is exactly ",
+  "dataset": "imagenet_a",
+  "agree": true
+ },
+ {
+  "error_key": "668aba10dfd4ab44",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F3",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Mycology' is a broad scientific field (the study of fungi), which is a super-category of the correct fine-grained label 'coral fungus'. This matches the definition of Overgeneralizat",
+  "dataset": "imagenet_sketch",
+  "agree": false
+ },
+ {
+  "error_key": "775809e10e393f02",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Stripes' is a broader, super-category label for the correct fine-grained texture category 'banded'. 'Banded' is a specific type of stripe pattern, so the model overgeneralized by usi",
+  "dataset": "dtd",
+  "agree": true
+ },
+ {
+  "error_key": "7bf853b77d74b61f",
+  "family": "robustness",
+  "judge": "F7",
+  "human": "F7",
+  "judge_confidence": 1.0,
+  "judge_rationale": "The model output 'Dog' is a broad super-category of the correct fine-grained label 'Basenji', which is a specific breed. This matches the definition of overgeneralization (F7).",
+  "dataset": "imagenet_sketch",
+  "agree": true
+ },
+ {
+  "error_key": "022a48f0c27be957",
+  "family": "satellite",
+  "judge": "F6",
+  "human": "F3",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model output 'Aircraft runway' instead of the correct category 'airport', misattributing the label to a specific component (runway) rather than the overall airport scene. This is a clear case of a",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "110292b15204a9c4",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F3",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aerial View' is a broad, super-category description of the image type, rather than the required fine-grained category 'airport'. This matches Overgeneralization (F7), where a general",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "12f15cc30596d448",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image shows an airport (runways, terminal, etc.), and the model correctly identified an aviatio",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "14703168ca527be0",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image likely shows an airport scene with aircraft present, but the task requires the specific c",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "1a1b5bcd9184ec89",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F3",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Airports' is a broader super-category; the correct fine-grained label is 'airplane'. This is a classic case of overgeneralization where the model fails to provide the most specific c",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "344830b92f8251dc",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image likely shows an airport scene with aircraft present, but the task requires the specific c",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "391a28d4a0889dec",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image shows an airport, and the model correctly identifies an aviation-related entity but fails",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "3b0cb217aa125e8b",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image likely contains an airport with aircraft, but the task requires the specific category 'ai",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "3bfc944fe9a4ff61",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image shows an airport scene, which includes aircraft, but the task requires the most specific ",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "3c87bf4bce2f7ede",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image likely shows an airport scene, and the model correctly identified an aviation-related ent",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "3e0ac4c488dad32f",
+  "family": "satellite",
+  "judge": "F6",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model outputs 'airplane' instead of the correct 'airport'. While airplanes are commonly present at airports, the main subject of the satellite image is the airport itself. The model correctly iden",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "439f1317f055a553",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F3",
+  "judge_confidence": 0.9,
+  "judge_rationale": "The model output 'Airplane' is a specific object that could be present at an airport, but the correct fine-grained category is 'airport' (the entire scene). The model overgeneralized by naming a visib",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "490a6e16ef09f131",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image likely shows an airport scene with aircraft present, but the task requires the specific c",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "4f44587af402b1f2",
+  "family": "satellite",
+  "judge": "F6",
+  "human": "F3",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Airports' is a location category, while the gold answer is 'airplane', a specific object. The image likely contains an airplane at an airport, but the model misattributed the main su",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "51e977221ceaf8be",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image likely shows an airport scene with aircraft present, but the task requires the specific c",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "5782d3e9926b2af3",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image shows an airport scene, and the model correctly identified the presence of aircraft but o",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "59f421439a0405f3",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image likely shows an airport scene with aircraft present, but the task requires the specific c",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "59f9abf08255490b",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image shows an airport (runways, terminals, etc.), and the model correctly identified an aviati",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "5a6bb0b4dc82a33b",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader super-category of the correct fine-grained label 'airport'. The image likely contains an airport with aircraft present, but the task requires the specific cate",
+  "dataset": "resisc45",
+  "agree": false
+ },
+ {
+  "error_key": "645bd419e29737a1",
+  "family": "satellite",
+  "judge": "F7",
+  "human": "F1",
+  "judge_confidence": 0.95,
+  "judge_rationale": "The model output 'Aircraft' is a broader category that includes the correct fine-grained label 'airport'. The image likely shows an airport scene with aircraft present, but the task requires the speci",
+  "dataset": "resisc45",
+  "agree": false
+ }
+]
