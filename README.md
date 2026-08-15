@@ -44,12 +44,15 @@ All model predictions and LLM-judge labels are cached under `results/*/`. Regene
 every table, figure, and the judge-validity analysis from that committed data:
 
 ```bash
-pip install -r requirements.txt
-python reproduce.py            # tables + figures + judge-validity  (single entry point)
-# individual stages:
-python reproduce.py figures    # -> docs/figures/fig1-7.pdf + PNGs
-python reproduce.py agreement  # human-vs-judge + Fleiss' kappa (reads human_annotations/)
-python reproduce.py tables     # per-family F1-F8 tables -> results/main2b/tables/
+./reproduce.sh                 # installs deps + runs everything  (shell entry point)
+# or, equivalently:
+python reproduce.py            # tables + figures + judge-validity (Python entry point)
+
+# individual stages (either entry point):
+./reproduce.sh figures         # -> docs/figures/fig1-7.pdf + PNGs
+./reproduce.sh agreement       # human-vs-judge + Fleiss' kappa (reads human_annotations/)
+./reproduce.sh tables          # per-family F1-F8 tables -> results/main2b/tables/
+./reproduce.sh --no-install agreement   # skip the pip install step
 ```
 
 **Re-running the heavy stages** (model inference + LLM judging; needs a GPU and an
