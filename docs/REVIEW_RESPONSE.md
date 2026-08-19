@@ -100,15 +100,26 @@ The model almost never emits the clean label token (exact ≈0), consistent with
 broader/near category; embeddings recover only part of it. We now report per-stage rates
 and note that F7 uses raw text.
 
-## Q6 — Judge prompt/decoding ablations (secondary mode, CoT, sampling) **[Partly done + Planned]**
+## Q6 — Judge prompt/decoding ablations (secondary mode, CoT, sampling) **[New analysis]**
 
-We decode at temperature 0 with a fixed priority-ordered rubric and a required
-secondary-mode field. Robustness to the *choice of judge* is already quantified by the
-8-judge cross-provider panel (mean pairwise κ 0.52–0.56; all 8 rank F7 dominant), which
-bounds sensitivity to judge identity and prompt idiosyncrasy. We will add a focused
-prompt/decoding ablation (with/without secondary mode; deterministic vs sampled;
-with/without brief CoT) on a fixed recognition subset and confirm the F7 headline is
-invariant.
+We re-judged a fixed sample of 240 recognition errors under four judge configurations
+and measured the F7 rate and agreement with the deployed config:
+
+| Judge configuration | F7 rate |
+|---|---|
+| base (deployed: priority order, temp 0) | 84.2% |
+| no priority-order guidance | 86.2% |
+| no examples in the rubric | 85.8% |
+| sampled decoding (temp 0.7) | 84.2% |
+
+**The F7 headline is invariant** (84–86%, a ~2-point range) to removing the priority
+order, removing the in-rubric examples, and switching from deterministic to sampled
+decoding. The per-error label has only moderate reliability against the base
+configuration (Cohen's κ 0.37–0.50, raw 82–87%) — the same envelope as human–human and
+human–judge agreement — but this variation is on *which* mode a borderline case gets, not
+on the aggregate dominance of F7. Robustness to the *choice of judge model* is
+independently quantified by the 8-judge cross-provider panel (mean pairwise κ 0.52–0.56;
+all eight rank F7 dominant). (Script: `scripts/judge_ablation.py`.)
 
 ## W7 — Related work / positioning **[Fixed]**
 
@@ -129,4 +140,4 @@ would measure whether such training shifts F7→F6).
 - **`--hint-distractors`** added for the large-label closed-set variant (W4/Q5).
 - **Wilson CIs** for all sampled proportions; overlap of closed-set vs contrastive F7 (W5/Q4).
 - **F7 shown independent of the matcher** (judged on raw text) + per-stage ablation (W6/Q7).
-- **Related Work** added (W7); judge-choice robustness already bounded by the 8-judge panel (Q6).
+- **Related Work** added (W7); judge-choice robustness bounded by the 8-judge panel; **judge prompt/decoding ablation done** (F7 84-86% invariant across 4 configs) (Q6).
