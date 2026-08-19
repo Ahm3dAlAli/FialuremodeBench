@@ -41,7 +41,8 @@ def _oversized(image) -> bool:
 
 def run_recognition(spec: DatasetSpec, backend, model_key: str, run_dir: str,
                     repo_root: str, limit: Optional[int] = None,
-                    use_embeddings: bool = False, label_hint_k: int = 0) -> dict:
+                    use_embeddings: bool = False, label_hint_k: int = 0,
+                    shuffle_labels: int = 0, hint_distractors: int = 0) -> dict:
     from datasets import load_dataset
 
     labels, synonyms = load_label_set(spec.label_set or "", repo_root)
@@ -50,8 +51,16 @@ def run_recognition(spec: DatasetSpec, backend, model_key: str, run_dir: str,
             f"label set {spec.label_set!r} missing/empty; add "
             f"failuremodebench/labelsets/{spec.label_set}.json")
     matcher = LabelMatcher(labels, synonyms, use_embeddings=use_embeddings)
-    # short prompt for large label spaces; enumerate options only when small
-    hint = ", ".join(labels) if 0 < len(labels) <= (label_hint_k or 0) else ""
+    # closed-set control: enumerate candidate labels in the prompt when the label
+    # space is small enough. shuffle_labels>0 permutes the order (ordering-bias
+    # robustness check, reviewer W2/Q3); hint_distractors>0 enables the large-label
+    # variant (gold + K random distractors per item, reviewer W4/Q5 -- handled in
+    # the per-example loop below rather than a fixed global hint).
+    import random as _random
+    _hint_labels = list(labels)
+    if shuffle_labels:
+        _random.Random(shuffle_labels).shuffle(_hint_labels)
+    hint = ", ".join(_hint_labels) if (0 < len(labels) <= (label_hint_k or 0) and not hint_distractors) else ""
     prompt = classification_prompt(len(labels), hint)
 
     # split arithmetic ("train+val+test") is not supported in streaming mode,
@@ -111,7 +120,14 @@ def run_recognition(spec: DatasetSpec, backend, model_key: str, run_dir: str,
             if per_class_seen.get(key, 0) >= per_class_cap:
                 continue
             per_class_seen[key] = per_class_seen.get(key, 0) + 1
-        ans = backend.generate(image, prompt)
+        _prompt = prompt
+        if hint_distractors:  # large-label closed-set: gold + K random distractors
+            pool = [l for l in labels if normalize(l) != normalize(gold)]
+            seed = (shuffle_labels or 1) * 1000003 + n
+            cand = _random.Random(seed).sample(pool, min(hint_distractors, len(pool))) + [gold]
+            _random.Random(seed + 1).shuffle(cand)
+            _prompt = classification_prompt(len(labels), ", ".join(cand))
+        ans = backend.generate(image, _prompt)
         mi, method = matcher.match(ans)
         pred_label = labels[mi] if mi is not None else ""
         if gold_idx is not None:

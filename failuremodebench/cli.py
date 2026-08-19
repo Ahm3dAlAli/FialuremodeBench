@@ -51,7 +51,9 @@ def cmd_infer_recognition(args):
             try:
                 s = run_recognition(DATASETS[dk], backend, mk, run_dir, _repo_root(),
                                     limit=args.limit, use_embeddings=args.embeddings,
-                                    label_hint_k=args.label_hint_k)
+                                    label_hint_k=args.label_hint_k,
+                                    shuffle_labels=args.shuffle_labels,
+                                    hint_distractors=args.hint_distractors)
                 print("   ", s)
                 stats.append(s)
             except Exception as e:
@@ -169,6 +171,12 @@ def main(argv=None):
     p.add_argument("--label-hint-k", type=int, default=0,
                    help="closed-set control: list the candidate labels in the prompt "
                         "when a dataset has <= K classes (0 = open-ended, the default)")
+    p.add_argument("--shuffle-labels", type=int, default=0,
+                   help="permute the closed-set label order with this seed "
+                        "(ordering-bias robustness check; 0 = fixed order)")
+    p.add_argument("--hint-distractors", type=int, default=0,
+                   help="large-label closed-set: prompt with gold + K random "
+                        "distractors per item (tests F7 collapse at large label spaces)")
     p.add_argument("--no-images", action="store_true", help="text-only judge")
     p.add_argument("--echo", action="store_true", help="offline stub judge (tests)")
     sub = p.add_subparsers(dest="cmd", required=True)

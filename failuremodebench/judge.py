@@ -93,9 +93,16 @@ def _load_image(image_ref: str):
 
 
 def judge_errors(sampled: list[dict], provider, out_path: str,
-                 attach_images: bool = True, max_retries: int = 3,
+                 attach_images: bool = False, max_retries: int = 3,
                  sleep_on_err: float = 2.0) -> dict:
-    """Classify each sampled error; write annotated corpus incrementally."""
+    """Classify each sampled error; write annotated corpus incrementally.
+
+    The DEPLOYED judge (deepseek-v4-flash) is TEXT-ONLY: it reasons over
+    (question, gold, prediction), not the pixels. All reported corpora were
+    produced text-only (attach_images=False); the flag is kept only so an
+    image-capable provider can be swapped in for ablations. See §Limitations:
+    text-only judging is why F1/F6 attributions on some VQA families are the
+    lowest-agreement cases (validated in the human study)."""
     done: dict[str, dict] = {}
     if os.path.exists(out_path):
         for r in read_jsonl(out_path):

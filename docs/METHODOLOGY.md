@@ -117,7 +117,12 @@ isolate them we hold the model fixed and intervene on the output space only.
 For each small-label dataset we run the *same* generative model in a **closed-set**
 condition: the prompt is augmented with the candidate labels
 $q' = q \oplus \mathcal{L}$, restricting the intended output to $\mathcal{L}$ while the
-weights, image, and everything else are unchanged. Writing
+weights, image, and everything else are unchanged. Crucially the **answer modality is
+held fixed**: the model still produces a *free-form* category name (resolved by the
+same cascade $R$), not a multiple-choice letter — there are no answer positions or
+option identifiers, so letter-position bias cannot arise. The only manipulated variable
+is the presence (and order) of the candidate set; we test order-invariance by permuting
+$\mathcal{L}$ across seeds. Writing
 $\mathrm{acc}^{\text{open}}, \mathrm{acc}^{\text{closed}}$ and $p^{\text{open}}(F_7),
 p^{\text{closed}}(F_7)$ for the two conditions, the control estimates the
 **interface-attributable** component of the effect:
