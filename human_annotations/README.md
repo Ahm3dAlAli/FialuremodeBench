@@ -5,8 +5,8 @@ validate the LLM judge (`§Judge Reliability` in the paper).
 
 | File | Annotator | Items labeled |
 |---|---|---|
-| `annotator1_ahmed.json` | Annotator 1 | 700-item study |
-| `annotator2_cui.json` | Annotator 2 (Cui) | 648/700 |
+| `annotator1.json` | Annotator 1 | 700-item study |
+| `annotator2.json` | Annotator 2 | 648/700 |
 | `_archive/` | earlier / partial passes | (not used) |
 
 **Format.** A JSON list; each row: `error_key` (join key to `results/main2b/corpus.jsonl`),
@@ -19,6 +19,6 @@ Fleiss' κ, judge-vs-consensus):
 
     python scripts/multi_annotator_agreement.py --run main2b
 
-**Add a new annotator:** drop `annotatorN_name.json` (exported from the study page
+**Add a new annotator:** drop `annotatorN.json` (exported from the study page
 `docs/FailureModeBench_annotation_study.html`) into this folder and re-run the command
 above — it auto-discovers every `*.json` here.

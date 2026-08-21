@@ -72,7 +72,7 @@ failuremodebench/     core package (config, taxonomy, backends, recognition, vqa
                       judge, multijudge, aggregate, providers, cli)
 scripts/              make_figures.py, multi_annotator_agreement.py, make_human_study.py,
                       expand_corpus.py, extract_vqa_images.py, ... (analysis + data prep)
-human_annotations/    annotator1_ahmed.json, annotator2_cui.json  (+ _archive/, README)
+human_annotations/    annotator1.json, annotator2.json  (+ _archive/, README)
 results/<run>/        predictions/, corpus.jsonl (judged errors), tables/, figures/
 docs/                 RESULTS_SUMMARY.md, SETUP_AND_RESULTS.md,                       ABSTRACT_INTRO.md, FIGURE_CAPTIONS.md, figures/*.pdf, annotation study
 reproduce.py          single entry point (analysis from committed data)
